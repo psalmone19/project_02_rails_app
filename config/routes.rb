@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  get 'welcome/index'
+  root to: "welcome#index"
+
+  get 'users' => 'users#index'
+
+  get 'welcome/new'
+  get 'welcome/create'
 
   devise_for :users
-  root to: "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
