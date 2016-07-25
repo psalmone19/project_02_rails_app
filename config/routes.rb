@@ -1,30 +1,20 @@
 Rails.application.routes.draw do
-  get 'songs/index'
+  root 'welcome#index'
 
-  get 'songs/new'
-
-  get 'songs/create'
-
-  get 'songs/show'
-
-  get 'songs/edit'
-
-  get 'songs/update'
-
-  get 'songs/destroy'
+  get 'songs' => 'songs#index'
+  get 'songs/new' => 'songs#new', as: :new_song
+  get 'songs' => 'songs#create'
+  get 'songs/:id' => 'songs#show'
+  get 'songs/:id/edit' => 'songs#edit' as: :edit_song
+  get 'songs/:id' => 'songs#update'
+  get 'songs/:id' => 'songs#destroy'
 
   get 'teams/index'
-
   get 'teams/new'
-
   get 'teams/create'
-
   get 'teams/show'
-
   get 'teams/edit'
-
   get 'teams/update'
-
   get 'teams/destroy'
 
   get 'users' => 'users#index'
@@ -35,7 +25,6 @@ Rails.application.routes.draw do
   get 'users/update'
   get 'users/destroy'
   get 'welcome/index'
-  root 'welcome#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
