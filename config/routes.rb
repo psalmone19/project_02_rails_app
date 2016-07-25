@@ -1,10 +1,41 @@
 Rails.application.routes.draw do
-  root to: "welcome#index"
+  get 'songs/index'
+
+  get 'songs/new'
+
+  get 'songs/create'
+
+  get 'songs/show'
+
+  get 'songs/edit'
+
+  get 'songs/update'
+
+  get 'songs/destroy'
+
+  get 'teams/index'
+
+  get 'teams/new'
+
+  get 'teams/create'
+
+  get 'teams/show'
+
+  get 'teams/edit'
+
+  get 'teams/update'
+
+  get 'teams/destroy'
 
   get 'users' => 'users#index'
-
-  get 'welcome/new'
-  get 'welcome/create'
+  get 'users/new'
+  get 'users/create'
+  get 'users/show'
+  get 'users/edit'
+  get 'users/update'
+  get 'users/destroy'
+  get 'welcome/index'
+  root 'welcome#index'
 
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
