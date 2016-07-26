@@ -1,2 +1,13 @@
 <h1>Songs#index</h1>
 <p>Find me in app/views/songs/index.html.erb</p>
+
+<h1>myMusic</h1>
+
+<h3>List of Songs</h3>
+
+<% @songs.each do |song| %>
+  <%= song.title %>
+  <%= link_to 'New Song', new_song_path %>
+  <%= link_to 'Edit', edit_song_path(song) %>
+  <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?'} %>
+<% end %>
