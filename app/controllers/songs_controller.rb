@@ -26,8 +26,8 @@ class SongsController < ApplicationController
 
   def update
     @song = Song.find(params[:id])
-    if @song.update(book_params)
-      redirect_to (@song)
+    if @song.update(song_params)
+      redirect_to edit_song_path, notice: "Your changes have been saved."
     else
       render :edit
     end

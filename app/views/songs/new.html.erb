@@ -1,13 +1,18 @@
-<h1>Songs#new</h1>
-<p>Find me in app/views/songs/new.html.erb</p>
+<h1>Craft A Song</h1>
 
-<%= form_for @song do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %><br/>
+<div class="new-song-form">
+  <%= form_for @song do |f| %>
+   <%= f.label :title %>
+   <%= f.text_field :title %><br/>
 
-  <%= f.label :lyrics %>
-  <%= f.text_area :lyrics %><br/>
+   <%= f.text_area :lyrics %><br/>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+
+
+
+
 

@@ -1,7 +1,15 @@
-<h1>Songs#edit</h1>
-<p>Find me in app/views/songs/edit.html.erb</p>
+<h1>Edit Your Song</h1>
 
-<form action="edit_submit" method="get" accept-charset="utf-8">
-  edit_submit
-  get
-</form>
+<%= link_to 'Home', :home %>
+
+<br/>
+
+<%= form_for @song do |f| %>
+  <%= f.label @song.title %><br/>
+  <%= f.text_area :lyrics %><br/>
+  <%= f.submit "Save changes" %>
+<% end %>
+
+<br/>
+
+<%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?'} %>

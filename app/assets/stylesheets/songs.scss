@@ -1,3 +1,59 @@
 // Place all the styles related to the Songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.song-index-page {
+  background-color: #fd9e81;
+}
+
+h1 {
+  // background-color: red;
+  text-align: center;
+}
+
+.list-song-title-2 {
+  text-align: center;
+}
+
+/*****CONTAINER FOR LIST OF SONGS*****/
+.list-songs {
+  border: 1px solid black;
+  background-color: green;
+  text-align: center;
+}
+
+/*****STYLING FOR SONG TITLE*****/
+.song-title {
+  color: white;
+  display: inline-block;
+  background-color: red;
+}
+
+
+
+/*****CONTAINER FOR EDIT*****/
+#edit-container {
+  border: 1px black solid;
+  background-color: orange;
+  display: inline-block;
+}
+
+/*****CONTAINER FOR EDIT*****/
+#delete-container {
+  border: 1px black solid;
+  background-color: orange;
+  display: inline-block;
+}
+
+.new-song-link {
+  text-align: center;
+}
+
+// .new-song-form {
+//   background-color: red;
+//   width: 100%;
+//   margin: 0 auto;
+// }
+
+
