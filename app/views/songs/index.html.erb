@@ -5,9 +5,12 @@
 
 <h3>List of Songs</h3>
 
-<% @songs.each do |song| %>
-  <%= song.title %>
-  <%= link_to 'New Song', new_song_path %>
-  <%= link_to 'Edit', edit_song_path(song) %>
-  <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?'} %>
-<% end %>
+<ul>
+  <% @songs.each do |song| %>
+    <li><%= song.title %></li>
+    <%= link_to 'Edit', edit_song_path(song) %>
+    <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <% end %>
+</ul>
+
+<%= link_to 'New Song', new_song_path %>

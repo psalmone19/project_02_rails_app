@@ -8,7 +8,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    @song = Song.create(song_params)
+    @song = Song.new(song_params)
     if @song.save
     redirect_to :index, notice: "Song was successfully created."
     else
@@ -34,6 +34,9 @@ class SongsController < ApplicationController
   end
 
   def destroy
+    @song = Song.find(params[:id])
+    @song.delete
+    redirect_to :home, notice: "Song was successfully deleted."
   end
 
   private
