@@ -1,14 +1,15 @@
 Rails.application.routes.draw do
   root 'songs#index', as: :home
 
-  get 'songs'             =>   'songs#index', as: :index
+  get 'songs'             =>   'songs#index'
   get 'songs/new'         =>   'songs#new', as: :new_song
   post 'songs'            =>   'songs#create'
-  get 'songs/:id'         =>   'songs#show', as: :song
+  get 'songs/:id'         =>   'songs#show', as: :show_song
   get 'songs/:id/edit'    =>   'songs#edit', as: :edit_song
   patch 'songs/:id'       =>   'songs#update', as: :update_song
   delete 'songs/:id'      =>   'songs#destroy', as: :delete_song
 
+  resources :songs
   # get 'teams/index'
   # get 'teams/new'
   # post 'teams/create'
