@@ -1,15 +1,24 @@
 <div class="song-index-page">
-  <h1>myMusic</h1>
+
+  <h1 class="list-song-title-1">My Library</h1>
+
+  <p class="new-song-link"><%= link_to 'New Song', new_song_path %></p>
 
   <h3 class="list-song-title-2">List of Songs</h3>
 
-  <div class="list-songs">
-    <% @songs.each do |song| %>
-      <div class="song-title"><%= song.title %></div>
-      <div id="edit-container"><%= link_to 'Edit', edit_song_path(song) %></div>
-      <div id="delete-container"><%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?'} %></div><br/>
-    <% end %>
+  <div class="row row-header">
+    <h5 class="col-md-8">Title</h5>
+    <h5 class="col-md-4">Options</h5>
   </div>
+  <% @songs.each do |song| %>
+    <div class="row song-container">
+      <div class="col-md-8 song-title"><a href="songs/:id" class="show-song"><%= song.title %></a></div>
+      <div class="col-md-4">
+        <%= link_to 'Edit', edit_song_path(song) %>
+        <%= link_to 'Delete', song, method: :delete, data: { confirm: 'Are you sure?'} %>
+      </div>
+    </div>
+  <% end %>
 
-  <p class="new-song-link"><%= link_to 'New Song', new_song_path %></p>
 </div>
+

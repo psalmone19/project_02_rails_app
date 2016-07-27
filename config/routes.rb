@@ -1,33 +1,51 @@
 Rails.application.routes.draw do
   root 'songs#index', as: :home
 
-  get 'songs' => 'songs#index', as: :index
-  get 'songs/new' => 'songs#new', as: :new_song
-  post 'songs' => 'songs#create'
-  get 'songs/:id' => 'songs#show', as: :song
-  get 'songs/:id/edit' => 'songs#edit', as: :edit_song
-  patch 'songs/:id' => 'songs#update', as: :update_song
-  delete 'songs/:id' => 'songs#destroy', as: :delete_song
+  get 'songs'             =>   'songs#index', as: :index
+  get 'songs/new'         =>   'songs#new', as: :new_song
+  post 'songs'            =>   'songs#create'
+  get 'songs/:id'         =>   'songs#show', as: :song
+  get 'songs/:id/edit'    =>   'songs#edit', as: :edit_song
+  patch 'songs/:id'       =>   'songs#update', as: :update_song
+  delete 'songs/:id'      =>   'songs#destroy', as: :delete_song
 
-  get 'teams/index'
-  get 'teams/new'
-  post 'teams/create'
-  get 'teams/show'
-  get 'teams/edit'
-  patch 'teams/update'
-  delete 'teams/destroy'
+  # get 'teams/index'
+  # get 'teams/new'
+  # post 'teams/create'
+  # get 'teams/:id'
+  # get 'teams/:id/edit'
+  # patch 'teams/:id'
+  # delete 'teams/:id'
 
-  get 'users' => 'users#index'
-  get 'users/new'
-  post 'users/create'
-  get 'users/show'
-  get 'users/edit'
-  patch 'users/update'
-  delete 'users/destroy'
-
-  # get 'welcome/index'
+  # get 'users'
+  # get 'users/new'
+  # post 'users/create'
+  # get 'users/show'
+  # get 'users/edit'
+  # patch 'users/update'
+  # delete 'users/destroy'
 
   devise_for :users
+
+
+
+  # => 'teams#index', as: :index
+  # => 'teams#new', as: :new_team
+  # => 'teams#create'
+  # => 'teams#show', as: :team
+  # => 'teams#edit', as: :edit_team
+  # => 'teams#update', as: :update_team
+  # => 'teams#destroy', as: :delete_team
+
+
+  # => 'users#index', as: :index
+  # => 'users#new', as: :new_user
+  # => 'users#create'
+  # => 'users#show', as: :user
+  # => 'users#edit', as: :edit_user
+  # => 'users#update', as: :update_user
+  # => 'users#destroy', as: :delete_user
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

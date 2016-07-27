@@ -2,58 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+/*****SONG MAIN PAGE*****/
 .song-index-page {
-  background-color: #fd9e81;
+  background-color: #666666;
+  height: 100vh;
+  width: 100vw;
 }
 
-h1 {
-  // background-color: red;
-  text-align: center;
-}
-
-.list-song-title-2 {
-  text-align: center;
-}
-
-/*****CONTAINER FOR LIST OF SONGS*****/
-.list-songs {
-  border: 1px solid black;
-  background-color: green;
-  text-align: center;
-}
-
-/*****STYLING FOR SONG TITLE*****/
-.song-title {
+.list-song-title-1 {
   color: white;
-  display: inline-block;
-  background-color: red;
 }
 
 
-
-/*****CONTAINER FOR EDIT*****/
-#edit-container {
-  border: 1px black solid;
-  background-color: orange;
-  display: inline-block;
+/*****CONTAINER FOR SONG TITLE*****/
+.song-title {
+  font-size: 20px;
 }
 
-/*****CONTAINER FOR EDIT*****/
-#delete-container {
-  border: 1px black solid;
-  background-color: orange;
-  display: inline-block;
+.song-container:hover {
+  background-color: #999;
 }
 
-.new-song-link {
-  text-align: center;
+.show-song {
+  text-decoration: none !important;
+  color: #000;
 }
-
-// .new-song-form {
-//   background-color: red;
-//   width: 100%;
-//   margin: 0 auto;
-// }
-
 
