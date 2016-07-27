@@ -4,9 +4,10 @@
 
 /*****SONG MAIN PAGE*****/
 .song-index-page {
-  background-color: #666666;
+  background-color: #fff;
   height: 100vh;
   width: 100vw;
+  padding-left: 10px;
 }
 
 .list-song-title-1 {
@@ -17,6 +18,11 @@
 /*****CONTAINER FOR SONG TITLE*****/
 .song-title {
   font-size: 20px;
+}
+
+.song-container {
+  border: 1px;
+  box-shadow: 5px 1px 2px #888888;
 }
 
 .song-container:hover {

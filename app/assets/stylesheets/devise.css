@@ -1,3 +1,7 @@
+#main-container {
+  background-color: #ff5a5a;
+}
+
 #log-in-page-container {
   background-color: #c0c0c0;
   display: flex;
