@@ -2,14 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/*********SONG.HTML.ERB**********/
 /*****SONG MAIN PAGE*****/
 .song-main-container {
   background-color: #fff;
   max-height: 100vh;
   max-width: 100vw;
-
 }
 
+
+
+/*****CONTAINER THAT LISTS THE SONGS*****/
 .inner-container {
   height: 100vh;
   width: 80%;
@@ -18,12 +21,6 @@
   background-color: #fff;
 }
 
-#side-nav {
-  background-color: orange;
-  height: 100vh;
-}
-
-/*****CONTAINER FOR SONG TITLE*****/
 .song-title {
   font-size: 20px;
 }
@@ -44,3 +41,52 @@
   color: #000;
 }
 
+.row-header {
+  margin: 0 auto !important;
+}
+
+
+
+/*****SIDE NAV IN SONG INDEX*****/
+#side-nav {
+  background-color: #9692b2;
+  height: 100vh;
+}
+
+.button-holder {
+  text-align: center;
+}
+
+.button-link {
+  width: 100%;
+}
+
+/**********EDIT.HTML.ERB**********/
+/*****EDIT SONG FORM CONTAINER*****/
+.edit-song-container {
+  background-color: #666;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.inner-edit-song-container {
+
+}
+
+
+/*********SHOW.HTML.ERB*********/
+.show-song-container {
+  background-color: #666;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*********NEW.SONG.ERB*********/
+.new-song-form-container {
+  background-color: #666;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+}

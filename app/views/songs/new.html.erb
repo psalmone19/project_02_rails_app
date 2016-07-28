@@ -1,17 +1,21 @@
-<h1>Craft A Song</h1>
 
-<div class="new-song-form">
-  <%= form_for @song do |f| %>
-   <%= f.label :title %>
-   <%= f.text_field :title %><br/>
+<div class="new-song-form-container">
+  <div class="inner-edit-song-container col-md-12">
+    <h1>New Song</h1>
+    <%= form_for @song do |f| %>
 
-   <%= f.text_area :lyrics %><br/>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+
+    <%= f.label :lyrics %>
+    <%= f.text_area :lyrics %>
 
     <%= f.submit %>
-  <% end %>
+    <% end %>
+  </div>
 </div>
 
-<button><%= link_to "Back", songs_path %></button>
+<button><%= link_to "Back", home_path %></button>
 
 
 

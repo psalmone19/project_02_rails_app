@@ -1,8 +1,8 @@
-<div class="song-main-container">
-  <h1>Songs#show</h1>
+<div class="show-song-container">
+  <div class="inner-edit-song-container col-md-12">
+    <h3><%= @song.title %></h3>
+    <textarea class="form-control" rows="30"><%= @song.lyrics %></textarea>
 
-  <%= @song.title %>
-  <%= @song.lyrics %>
-
-  <%= link_to "Back", songs_path %>
+    <%= link_to "Back", home_path %>
+  </div>
 </div>
