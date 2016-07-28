@@ -1,21 +1,26 @@
-
-<div class="new-song-form-container">
+<div class="show-song-container">
   <div class="inner-edit-song-container col-md-12">
-    <h1>New Song</h1>
     <%= form_for @song do |f| %>
-
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-
-    <%= f.label :lyrics %>
-    <%= f.text_area :lyrics %>
-
-    <%= f.submit %>
+      <h3><%= f.text_field :title, placeholder: "Title" %></h3>
+      <%= f.text_area :lyrics, class: "lyrics-size" %>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
+      <%= f.submit "Create Song" %>
     <% end %>
+    <%= link_to "Back", home_path %>
+    <%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>
 
-<button><%= link_to "Back", home_path %></button>
+
+
+
+
+
+
+
+
+
+
 
 
 

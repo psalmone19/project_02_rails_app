@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.all
+    @songs = Song.where(user_id: current_user.id)
   end
 
   def new
@@ -10,7 +10,7 @@ class SongsController < ApplicationController
   def create
     @song = Song.new(song_params)
     if @song.save
-    redirect_to :home, notice: "Song was successfully created."
+    redirect_to home_path, notice: "Song was successfully created."
     else
       render :new
     end
@@ -41,6 +41,6 @@ class SongsController < ApplicationController
 
   private
   def song_params
-    params.require(:song).permit(:title, :lyrics)
+    params.require(:song).permit(:title, :lyrics, :user_id)
   end
 end

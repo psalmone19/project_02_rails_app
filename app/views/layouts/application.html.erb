@@ -8,24 +8,31 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="application.css">
 </head>
+
+
 <body>
   <div id="main-container">
-    <% if user_signed_in? %>
-      Signed in as <%= current_user.first_name %>.
-    <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p><br />
-    <% else %>
-      <%= link_to 'Register', new_user_registration_path %> or <%= link_to 'Sign in', new_user_session_path %>
-    <% end %>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.first_name %>.
+        <p><%= link_to 'Sign out', destroy_user_session_path, :method => :delete %></p><br />
+        <% else %>
+          <div id="register"><%= link_to 'Register', new_user_registration_path %></div>
+          <div id="sign-in"><%= link_to 'Sign in', new_user_session_path %></div>
+        <% end %>
+      </div>
+    </nav>
   </div>
 
     <%= yield %>
 
+    <p class="alert"><%= notice %></p>
 </body>
 </html>
 
 
 
 <!--
-    <div class="alert alert-success" role="alert"><%= notice %></div>
 
     <div class="alert alert-success" role="alert"><%= alert %></div> -->

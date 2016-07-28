@@ -1,8 +1,11 @@
 <div class="show-song-container">
   <div class="inner-edit-song-container col-md-12">
-    <h3><%= @song.title %></h3>
-    <textarea class="form-control" rows="30"><%= @song.lyrics %></textarea>
-
+    <%= form_for @song do |f| %>
+      <h3><%= f.text_field :title %></h3>
+      <textarea class="lyrics-size"><%= @song.lyrics %></textarea>
+      <%= f.submit "Save changes" %>
+    <% end %>
     <%= link_to "Back", home_path %>
+    <%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>

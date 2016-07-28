@@ -3,7 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*********SONG.HTML.ERB**********/
-/*****SONG MAIN PAGE*****/
+#main-container {
+  background-color: #F8F3F1;
+  width: 100vw;
+  height: 10vh;
+  box-shadow: .3px 1px 1px #666;
+  margin-bottom: 2px;
+}
+
 .song-main-container {
   background-color: #fff;
   max-height: 100vh;
@@ -19,6 +26,7 @@
   margin: 0 auto;
   padding: 0 !important;
   background-color: #fff;
+  box-shadow: 1px -1px 5px #666;
 }
 
 .song-title {
@@ -51,6 +59,7 @@
 #side-nav {
   background-color: #9692b2;
   height: 100vh;
+  box-shadow: 1px -1px 5px #666;
 }
 
 .button-holder {
@@ -61,18 +70,6 @@
   width: 100%;
 }
 
-/**********EDIT.HTML.ERB**********/
-/*****EDIT SONG FORM CONTAINER*****/
-.edit-song-container {
-  background-color: #666;
-  width: 50vw;
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.inner-edit-song-container {
-
-}
 
 
 /*********SHOW.HTML.ERB*********/
@@ -83,10 +80,10 @@
   margin: 0 auto;
 }
 
-/*********NEW.SONG.ERB*********/
-.new-song-form-container {
-  background-color: #666;
-  width: 50vw;
-  height: 100vh;
-  margin: 0 auto;
+
+
+
+.lyrics-size {
+  height: 70vh;
+  width: 100%;
 }
