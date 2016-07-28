@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'songs#index'
+  root to: 'welcome#index', as: :home
 
-  get 'songs'             =>    'songs#index', as: :home
+  get 'songs'             =>    'songs#index', as: :songs
   get 'songs/new'         =>    'songs#new', as: :new_song
   post 'songs'            =>    'songs#create'
   get 'songs/:id'         =>    'songs#show', as: :show_song

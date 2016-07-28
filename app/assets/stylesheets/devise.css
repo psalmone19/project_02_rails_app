@@ -1,5 +1,6 @@
 #main-container {
   background-color: #ff5a5a;
+  max-width: 100vw;
 }
 
 #log-in-page-container {
@@ -36,4 +37,8 @@
   margin-bottom: 0;
 }
 
+.alert {
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
 

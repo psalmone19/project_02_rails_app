@@ -3,30 +3,40 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*****SONG MAIN PAGE*****/
-.song-index-page {
+.song-main-container {
   background-color: #fff;
+  max-height: 100vh;
+  max-width: 100vw;
+
+}
+
+.inner-container {
   height: 100vh;
-  width: 100vw;
-  padding-left: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 !important;
+  background-color: #fff;
 }
 
-.list-song-title-1 {
-  color: white;
+#side-nav {
+  background-color: orange;
+  height: 100vh;
 }
-
 
 /*****CONTAINER FOR SONG TITLE*****/
 .song-title {
   font-size: 20px;
 }
 
-.song-container {
+.song-list-container {
   border: 1px;
-  box-shadow: 5px 1px 2px #888888;
+  box-shadow: .3px .3px 1px #666;
+  width: 100%;
+  margin: 0 auto !important;
 }
 
-.song-container:hover {
-  background-color: #999;
+.song-list-container:hover {
+  background-color: #eee;
 }
 
 .show-song {
