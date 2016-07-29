@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="application.css">
 </head>
 
@@ -16,13 +16,13 @@
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="app-title-container col-sm-8">
-          <h1 id="app-title">ChordChart</h1>
+          <h1 id="app-title"><%= link_to "ChordChart", home_path, class: "app-title" %></h1>
         </div>
           <% if user_signed_in? %>
           <div id="user-sign-in"><p class="sign-out"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, class: "sign-out-link" %></p></div>
           <% else %>
-            <div id="user-sign-in" class="sign-out"><p><%= link_to 'Register', new_user_registration_path %></p></div>
-            <div id="user-sign-in" class="sign-out"><p><%= link_to 'Sign in', new_user_session_path %></p></div>
+            <div id="user-sign-in" class="sign-out"><p><%= link_to 'Register', new_user_registration_path, class: "sign-out-link" %></p></div>
+            <div id="user-sign-in" class="sign-out"><p><%= link_to 'Sign in', new_user_session_path, class: "sign-out-link" %></p></div>
           <% end %>
       </div>
     </nav>

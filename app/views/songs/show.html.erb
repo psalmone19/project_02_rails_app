@@ -4,8 +4,8 @@
       <h3><%= f.text_field :title %></h3>
       <%= f.cktext_area :lyrics, ckeditor: { language: 'en'} %>
       <%= f.submit "Save changes", class: "confirm-button" %>
+      <button><%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?', class: "confirm-button" } %></button>
+      <p class="show-links"><%= link_to "Home", home_path, class: "show-links" %></p>
     <% end %>
-    <%= link_to "Home", home_path %>
-    <%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>

@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vw;
+  width: 65vw;
   height: 100vh;
   box-shadow: 1px -1px 5px #666;
 }
@@ -20,7 +20,7 @@
 .log-in-header {
   text-align: center;
   font-family: 'Oswald', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .log-in-button {
@@ -36,6 +36,7 @@
 
 }
 
+/*****contains navbar of log in page*****/
 .container {
   /*background-color: yellow;*/
   margin-left: 0 !important;
@@ -43,25 +44,19 @@
   width: 100% !important;
 }
 
+
 #app-title {
-  font-family: 'Lobster', cursive;
-  margin-top: 10px;
+  font-family: 'Changa One', cursive;
+  margin-top: 15px;
 }
 
-#register {
-  background-color: orange;
-  display: inline-block;
-  margin: 5px;
-  position: relative;
-  width: 5%;
+.app-title {
+  text-decoration: none !important;
+  color: #000;
 }
 
-#sign-in {
- background-color: orange;
- display: inline-block;
- margin: 5px;
- position: relative;
- width: 5%;
+.app-title:hover {
+  color: #000;
 }
 
 #user-sign-in {
@@ -71,14 +66,14 @@
   height: 100%;
 }
 
-#sign-out-container:hover {
-  background-color: #F7F1EF;
+#user-sign-in:hover {
+  background-color: #E1D6D8;
 }
 
 .sign-out {
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 24px;
   margin-bottom: 0;
 }
 
@@ -95,10 +90,17 @@
   width: 50%;
 }
 
+.edit-user-field-container {
+  margin: 0 auto;
+  /*background-color: red;*/
+  width: 75%;
+}
+
 .field-container {
   margin: 0 auto;
   /*background-color: red;*/
   width: 75%;
+  padding-top: 20px;
 }
 
 .field {
