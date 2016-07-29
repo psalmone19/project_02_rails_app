@@ -94,6 +94,7 @@
   margin: 0 auto;
   /*background-color: red;*/
   width: 75%;
+  padding-top: 0;
 }
 
 .field-container {
@@ -101,6 +102,10 @@
   /*background-color: red;*/
   width: 75%;
   padding-top: 20px;
+}
+
+.edit-user-form-container {
+  padding-top: 0;
 }
 
 .field {
