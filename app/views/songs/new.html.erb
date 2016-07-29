@@ -1,13 +1,12 @@
 <div class="show-song-container">
   <div class="inner-edit-song-container col-md-12">
     <%= form_for @song do |f| %>
-      <h3><%= f.text_field :title, placeholder: "Title" %></h3>
-      <%= f.text_area :lyrics, class: "lyrics-size" %>
+      <h3><%= f.text_field :title, placeholder: "Title", autofocus: "on" %></h3>
+      <%= f.cktext_area :lyrics, ckeditor: { language: 'us'} %>
       <%= f.hidden_field :user_id, :value => current_user.id %>
-      <%= f.submit "Create Song" %>
+      <%= f.submit "Create Song", class: "create-song-button" %>
     <% end %>
     <%= link_to "Back", home_path %>
-    <%= link_to 'Delete', @song, method: :delete, data: { confirm: 'Are you sure?' } %>
   </div>
 </div>
 

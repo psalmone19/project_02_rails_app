@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root to: 'songs#index', as: :home
 
   get 'songs'             =>    'songs#index'
@@ -27,6 +28,7 @@ Rails.application.routes.draw do
   # delete 'users/:id'      =>    'users#destroy'
 
   devise_for :users
+
 
 
 

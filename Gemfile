@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+# Ck Text Editor
+gem 'ckeditor', github: 'galetahub/ckeditor'
 # Devise Auth
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
