@@ -44,6 +44,12 @@
 
 .user-name {
   padding-top: 10px;
+  text-decoration: none !important;
+  color: #000;
+}
+
+.user-name:hover {
+  color: #000;
 }
 
 .song-list-container {

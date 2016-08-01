@@ -21,7 +21,7 @@
       <div class="row song-list-container">
         <div class="col-md-8 song-title"><a href="songs/<%= song.id %>" class="show-song"><%= song.title %></a></div>
         <div class="col-md-4">
-          <p class="user-name"><%= song.user.first_name %></p>
+          <p class="user-name"><%= link_to song.user.first_name, show_song_path(song), class: "user-name" %></p>
         </div> <!--main container of list of songs -->
       </div>
     <% end %>
