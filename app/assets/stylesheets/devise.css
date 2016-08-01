@@ -5,7 +5,7 @@
   box-shadow: .3px 1px 1px #666;
 }
 
-#log-in-page-container {
+#information-page-container {
   margin: 2px auto;
   background-color: #c0c0c0;
   display: flex;
@@ -23,8 +23,9 @@
   font-size: 40px;
 }
 
-.log-in-button {
+.submit-button {
   text-align: center;
+  margin-top: 10px;
 }
 
 .navbar {
@@ -43,7 +44,6 @@
   margin-right: 0 !important;
   width: 100% !important;
 }
-
 
 #app-title {
   font-family: 'Changa One', cursive;
@@ -90,12 +90,6 @@
   width: 50%;
 }
 
-.edit-user-field-container {
-  margin: 0 auto;
-  /*background-color: red;*/
-  width: 75%;
-  padding-top: 0;
-}
 
 .field-container {
   margin: 0 auto;
@@ -104,7 +98,14 @@
   padding-top: 20px;
 }
 
-.edit-user-form-container {
+.edit-field-container {
+  margin: 0 auto;
+  /*background-color: red;*/
+  width: 75%;
+  padding-top: 0;
+}
+
+.edit-form-container {
   padding-top: 0;
 }
 
@@ -112,11 +113,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 20%;
 }
 
 .field p {
-  margin-bottom: 0;
+  padding-top: 5px;
+  margin-bottom: 0px;
 }
+
 
 .sign-up-link {
   text-align: center;

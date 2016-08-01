@@ -1,5 +1,4 @@
-
-<div id="log-in-page-container">
+<div id="information-page-container">
   <h2 class="log-in-header">Log in</h2>
 
     <div id="form-container">
@@ -23,7 +22,7 @@
           <% end -%>
 
           <div class="actions">
-            <div class="log-in-button"><%= f.submit "Log in" %></div>
+            <div class="submit-button"><%= f.submit "Log in" %></div>
           </div>
         <% end %>
         <%- if devise_mapping.registerable? && controller_name != 'registrations' %>

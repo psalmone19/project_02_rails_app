@@ -19,7 +19,7 @@
           <h1 id="app-title"><%= link_to "ChordChart", home_path, class: "app-title" %></h1>
         </div>
           <% if user_signed_in? %>
-          <div id="user-sign-in"><p class="sign-out"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, class: "sign-out-link" %></p></div>
+            <div id="user-sign-in"><p class="sign-out"><%= link_to 'Sign out', destroy_user_session_path, :method => :delete, class: "sign-out-link" %></p></div>
           <% else %>
             <div id="user-sign-in" class="sign-out"><p><%= link_to 'Register', new_user_registration_path, class: "sign-out-link" %></p></div>
             <div id="user-sign-in" class="sign-out"><p><%= link_to 'Sign in', new_user_session_path, class: "sign-out-link" %></p></div>

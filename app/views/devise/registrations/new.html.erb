@@ -1,4 +1,4 @@
-<div id="log-in-page-container">
+<div id="information-page-container">
   <h2 class="log-in-header">Sign up</h2>
 
   <div id="form-container">
@@ -6,35 +6,35 @@
       <%= devise_error_messages! %>
 
       <div class="field">
-        <%= f.label :first_name %><br />
+        <p><%= f.label :first_name %><br /></p>
         <%= f.text_field :first_name, autofocus: true %>
       </div>
 
       <div class="field">
-        <%= f.label :last_name %><br />
+        <p><%= f.label :last_name %><br /></p>
         <%= f.text_field :last_name, autofocus: true %>
       </div>
 
       <div class="field">
-        <%= f.label :email %><br />
+        <p><%= f.label :email %><br /></p>
         <%= f.email_field :email, autofocus: true %>
       </div>
 
       <div class="field">
-        <%= f.label :password %>
+        <p><%= f.label :password %></p>
         <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
+        <% end %>
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
 
       <div class="field">
-        <%= f.label :password_confirmation %><br />
+        <p><%= f.label :password_confirmation %></p>
         <%= f.password_field :password_confirmation, autocomplete: "off" %>
       </div>
 
       <div class="actions">
-        <div class="log-in-button"><%= f.submit "Sign up" %></div>
+        <div class="submit-button"><%= f.submit "Sign up" %></div>
       </div>
     <% end %>
   </div>
